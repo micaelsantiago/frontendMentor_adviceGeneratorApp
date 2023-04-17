@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --colorLightCyan: hsl(193, 38%, 86%);
+  --colorNeonGreen: hsl(150, 100%, 66%);
+  --colorGrayishBlue: hsl(217, 19%, 38%);
+  --colorDarkGrayish: hsl(217, 19%, 24%);
+  --colorDarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--colorDarkBlue);
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: var(--colorDarkGrayish);
+  border-radius: 12px;
+  width: 90vw;
+}
+
+.container span {
+  color: var(--colorNeonGreen);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.container q {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 28px;
+  color: var(--colorLightCyan);
+}
+
+.container .divider {
+  width: 100%;
+  position: relative;
+  top: 1rem;
+}
+
+.container .btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background: var(--colorNeonGreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 3.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .btn:hover {
+  box-shadow: 0px 0px 1rem var(--colorNeonGreen);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 500px
+  }
+}
